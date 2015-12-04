@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -528,6 +528,21 @@
 <circle x="0" y="0" radius="4.151203125" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.127" layer="21"/>
 <text x="-8.6" y="11" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="ESB33133">
+<hole x="0" y="1" drill="1.7"/>
+<pad name="C2" x="5" y="0" drill="1.2" shape="square"/>
+<pad name="NO2" x="5" y="2.5" drill="1.2" shape="square"/>
+<pad name="NC2" x="5" y="-2.5" drill="1.2" shape="square"/>
+<pad name="C1" x="-5" y="0" drill="1.2" shape="square"/>
+<pad name="NO1" x="-5" y="2.5" drill="1.2" shape="square"/>
+<pad name="NC1" x="-5" y="-2.5" drill="1.2" shape="square"/>
+<wire x1="4.925" y1="-4.3" x2="-4.925" y2="-4.3" width="0.127" layer="21"/>
+<wire x1="4.925" y1="4.3" x2="4.925" y2="-4.3" width="0.127" layer="21"/>
+<wire x1="4.925" y1="4.3" x2="-4.925" y2="4.3" width="0.127" layer="21"/>
+<wire x1="-4.925" y1="4.3" x2="-4.925" y2="-4.3" width="0.127" layer="21"/>
+<text x="-4.925" y="4.925" size="1.27" layer="25">&gt;NAME</text>
+<text x="5.08" y="-5.08" size="1.27" layer="27" rot="R180">&gt; VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1452,6 +1467,26 @@
 <connect gate="G$1" pin="7" pad="8"/>
 <connect gate="G$1" pin="8" pad="9"/>
 <connect gate="G$1" pin="C" pad="C@1 C@10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESB33133">
+<gates>
+<gate name="G$1" symbol="U_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESB33133">
+<connects>
+<connect gate="G$1" pin="O" pad="NC1"/>
+<connect gate="G$1" pin="O1" pad="NC2"/>
+<connect gate="G$1" pin="P" pad="C1"/>
+<connect gate="G$1" pin="P1" pad="C2"/>
+<connect gate="G$1" pin="S" pad="NO1"/>
+<connect gate="G$1" pin="S1" pad="NO2"/>
 </connects>
 <technologies>
 <technology name=""/>
