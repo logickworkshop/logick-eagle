@@ -163,6 +163,33 @@
 <rectangle x1="-0.9" y1="0.5" x2="-0.52" y2="0.63" layer="51"/>
 <rectangle x1="-0.68" y1="-0.63" x2="-0.3" y2="-0.5" layer="51"/>
 </package>
+<package name="TSSOP20">
+<smd name="1" x="-2.93" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="2" x="-2.28" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="3" x="-1.63" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="4" x="-0.98" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="5" x="-0.33" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="6" x="0.32" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="7" x="0.97" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="8" x="1.62" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="9" x="2.27" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="10" x="2.92" y="-2.825" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="20" x="-2.93" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="19" x="-2.28" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="18" x="-1.63" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="17" x="-0.98" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="16" x="-0.33" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="15" x="0.32" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="14" x="0.97" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="13" x="1.62" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="12" x="2.27" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<smd name="11" x="2.92" y="2.775" dx="1.6" dy="0.3" layer="1" rot="R270"/>
+<wire x1="-3.595" y1="-2.825" x2="-3.595" y2="2.775" width="0.127" layer="22"/>
+<wire x1="-3.595" y1="2.775" x2="3.45" y2="2.775" width="0.127" layer="22"/>
+<wire x1="3.45" y1="2.775" x2="3.45" y2="-2.825" width="0.127" layer="22"/>
+<wire x1="3.45" y1="-2.825" x2="-3.595" y2="-2.825" width="0.127" layer="22"/>
+<circle x="-2.96" y="-1.2375" radius="0.3175" width="0.127" layer="21"/>
+</package>
 <package name="DIL14">
 <wire x1="8.89" y1="2.921" x2="-8.89" y2="2.921" width="0.1524" layer="21"/>
 <wire x1="-8.89" y1="-2.921" x2="8.89" y2="-2.921" width="0.1524" layer="21"/>
@@ -556,6 +583,31 @@
 <text x="-4.4704" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TLC59213">
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<pin name="D1" x="-15.24" y="12.7" length="middle"/>
+<pin name="D2" x="-15.24" y="10.16" length="middle"/>
+<pin name="D3" x="-15.24" y="7.62" length="middle"/>
+<pin name="D4" x="-15.24" y="5.08" length="middle"/>
+<pin name="D5" x="-15.24" y="2.54" length="middle"/>
+<pin name="D6" x="-15.24" y="0" length="middle"/>
+<pin name="D7" x="-15.24" y="-2.54" length="middle"/>
+<pin name="D8" x="-15.24" y="-5.08" length="middle"/>
+<pin name="CLK" x="-15.24" y="-10.16" length="middle"/>
+<pin name="Y8" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="Y7" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="Y6" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="Y5" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="Y4" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="Y3" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="Y2" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="Y1" x="15.24" y="12.7" length="middle" rot="R180"/>
+<text x="-10.16" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<pin name="CLR" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
 </symbol>
 <symbol name="74HC7014">
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
@@ -1571,6 +1623,41 @@
 <connect gate="G$1" pin="5" pad="6"/>
 <connect gate="G$1" pin="6" pad="7"/>
 <connect gate="G$1" pin="C" pad="C@1 C@10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC59213">
+<gates>
+<gate name="A" symbol="TLC59213" x="0" y="0"/>
+<gate name="P" symbol="PWRN" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TSSOP20">
+<connects>
+<connect gate="A" pin="CLK" pad="10"/>
+<connect gate="A" pin="CLR" pad="1"/>
+<connect gate="A" pin="D1" pad="2"/>
+<connect gate="A" pin="D2" pad="3"/>
+<connect gate="A" pin="D3" pad="4"/>
+<connect gate="A" pin="D4" pad="5"/>
+<connect gate="A" pin="D5" pad="6"/>
+<connect gate="A" pin="D6" pad="7"/>
+<connect gate="A" pin="D7" pad="8"/>
+<connect gate="A" pin="D8" pad="9"/>
+<connect gate="A" pin="Y1" pad="19"/>
+<connect gate="A" pin="Y2" pad="18"/>
+<connect gate="A" pin="Y3" pad="17"/>
+<connect gate="A" pin="Y4" pad="16"/>
+<connect gate="A" pin="Y5" pad="15"/>
+<connect gate="A" pin="Y6" pad="14"/>
+<connect gate="A" pin="Y7" pad="13"/>
+<connect gate="A" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND" pad="11"/>
+<connect gate="P" pin="VCC" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>
