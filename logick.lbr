@@ -671,6 +671,38 @@
 <text x="-6" y="8.25" size="1.27" layer="21">&gt;NAME</text>
 <text x="-6" y="-10" size="1.27" layer="21">&gt;VALUE</text>
 </package>
+<package name="ADAFRUIT938">
+<pad name="RST" x="-1.27" y="0" drill="1"/>
+<pad name="DC" x="-3.81" y="0" drill="1"/>
+<pad name="CLK" x="-6.35" y="0" drill="1"/>
+<pad name="DATA" x="-8.89" y="0" drill="1"/>
+<pad name="CS" x="1.27" y="0" drill="1"/>
+<pad name="3V3" x="3.81" y="0" drill="1"/>
+<pad name="VIN" x="6.35" y="0" drill="1"/>
+<pad name="GND" x="8.89" y="0" drill="1"/>
+<hole x="-14.478" y="0" drill="2.8"/>
+<hole x="14.478" y="0" drill="2.8"/>
+<hole x="-14.478" y="-29.464" drill="2.8"/>
+<hole x="14.478" y="-29.464" drill="2.8"/>
+<wire x1="-14.478" y1="3.048" x2="14.478" y2="3.048" width="0.127" layer="51"/>
+<wire x1="-17.526" y1="0" x2="-17.526" y2="-3.302" width="0.127" layer="51"/>
+<wire x1="-17.526" y1="-3.302" x2="-17.526" y2="-22.098" width="0.127" layer="51"/>
+<wire x1="-17.526" y1="-22.098" x2="-17.526" y2="-29.464" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="3.048" x2="-17.526" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="-17.526" y1="-29.464" x2="-14.478" y2="-32.512" width="0.127" layer="51" curve="90"/>
+<wire x1="14.478" y1="-32.512" x2="17.526" y2="-29.464" width="0.127" layer="51" curve="90"/>
+<wire x1="17.526" y1="0" x2="14.478" y2="3.048" width="0.127" layer="51" curve="90"/>
+<wire x1="17.526" y1="0" x2="17.526" y2="-3.302" width="0.127" layer="51"/>
+<wire x1="17.526" y1="-3.302" x2="17.526" y2="-22.098" width="0.127" layer="51"/>
+<wire x1="17.526" y1="-22.098" x2="17.526" y2="-29.464" width="0.127" layer="51"/>
+<wire x1="-14.478" y1="-32.512" x2="-11.684" y2="-32.512" width="0.127" layer="51"/>
+<wire x1="14.478" y1="-32.512" x2="11.684" y2="-32.512" width="0.127" layer="51"/>
+<wire x1="-11.684" y1="-32.512" x2="-11.684" y2="-26.416" width="0.127" layer="51"/>
+<wire x1="-11.684" y1="-26.416" x2="11.684" y2="-26.416" width="0.127" layer="51"/>
+<wire x1="11.684" y1="-26.416" x2="11.684" y2="-32.512" width="0.127" layer="51"/>
+<wire x1="-17.526" y1="-3.302" x2="17.526" y2="-3.302" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-17.526" y1="-22.098" x2="17.526" y2="-22.098" width="0.127" layer="51" style="shortdash"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D-ZENER">
@@ -1370,6 +1402,21 @@
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
 <pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="ADAFRUIT938">
+<wire x1="-5.08" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<text x="-7.62" y="17.78" size="1.6764" layer="95" rot="R270">&gt;NAME</text>
+<pin name="VIN" x="0" y="22.86" length="middle" direction="sup" rot="R270"/>
+<pin name="DATA" x="15.24" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="CS" x="15.24" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="RST" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="CLK" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="2.54" y="-17.78" length="middle" direction="sup" rot="R90"/>
+<pin name="DC" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="3V3" x="5.08" y="22.86" length="middle" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="D-ZENER">
@@ -1912,6 +1959,28 @@
 <connect gate="ENC" pin="C" pad="C"/>
 <connect gate="SW" pin="1" pad="D"/>
 <connect gate="SW" pin="3" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT938">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT938" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT938">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="DC" pad="DC"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
