@@ -703,6 +703,26 @@
 <wire x1="-17.526" y1="-3.302" x2="17.526" y2="-3.302" width="0.127" layer="51" style="shortdash"/>
 <wire x1="-17.526" y1="-22.098" x2="17.526" y2="-22.098" width="0.127" layer="51" style="shortdash"/>
 </package>
+<package name="JS202011AQN">
+<pad name="2" x="0" y="-1.65" drill="0.9" shape="square"/>
+<pad name="5" x="0" y="1.65" drill="0.9" shape="square"/>
+<pad name="6" x="2.5" y="1.65" drill="0.9" shape="square"/>
+<pad name="4" x="-2.5" y="1.65" drill="0.9" shape="square"/>
+<pad name="1" x="-2.5" y="-1.65" drill="0.9" shape="square"/>
+<pad name="3" x="2.5" y="-1.65" drill="0.9" shape="square"/>
+<wire x1="-4.5" y1="1.85" x2="4.5" y2="1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.85" x2="4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.85" x2="1.75" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.85" x2="0.25" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="0.25" y1="-1.85" x2="-0.25" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-1.85" x2="-1.75" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.85" x2="-4.5" y2="-1.85" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.85" x2="-4.5" y2="1.85" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-3.85" x2="-1.75" y2="-1.85" width="0.127" layer="51" style="dashdot"/>
+<wire x1="-0.25" y1="-3.85" x2="-0.25" y2="-1.85" width="0.127" layer="51" style="dashdot"/>
+<wire x1="-1.75" y1="-3.85" x2="-0.25" y2="-3.85" width="0.127" layer="51" style="dashdot"/>
+<text x="-4.6" y="-1.85" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="D-ZENER">
@@ -1981,6 +2001,26 @@
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="RST" pad="RST"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JS202011AQN">
+<gates>
+<gate name="G$1" symbol="U_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JS202011AQN">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="O1" pad="4"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="P1" pad="5"/>
+<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="S1" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
